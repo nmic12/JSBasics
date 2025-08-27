@@ -26,8 +26,6 @@ function validateOperator() {
 const number1 = validateNumbers("first");
 const number2 = validateNumbers("second");
 
-
-// const operator = prompt("Please enter the operator: ");
 const operator = validateOperator();
 
 let result;
