@@ -21,16 +21,30 @@ function addContact() {
 }
 
 function deleteContact() {
-
-}
-
-function searchContact() {
+    const name = prompt("Name: ");
+    for (let i = 0;i < contacts.length;i++) {
+        if (name.toLowerCase() == contacts[i].name) {
+            contacts.pop(contacts[i]);
+            console.log("Contact deleted successfully");
+        }
+    }
 
 }
 
 function listContacts(contacts) {
     console.log(contacts);
 }
+
+function searchContact() {
+    let name = prompt("Name: ");
+    for (let i = 0;i < contacts.length;i++) {
+        if (name.toLowerCase() == contacts[i].name) {
+            console.log("Contact found:", contacts[i]);
+        }
+    }
+
+}
+
 
 printInfo();
 
